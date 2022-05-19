@@ -90,6 +90,7 @@ getCharacterByRegex(str option,str regex) # returns a list of Chapter objects. E
 Movie(str id, str name, int run_time_minutes, int budget_millions,
         int box_office_revenue_millions, int academy_award_nominations,
         int academy_award_wins, float rotten_tomatoes_score) #returns Movie Object
+movie.getAllMovieQuates() #returns a list of Quotes 
 getAllMovies(params = {}) #returns a list of Movie Object
 getAllMoviesSorted(str sortBy,str sortType) # returns a list of Movie objects. Ex sortBy="name", sortVal = "asc"
 getMovieById(str id) #returns Movie Object
