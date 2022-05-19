@@ -2,11 +2,12 @@ import requests
 from dataclasses import dataclass, field
 try:
     from settings import API
+    from chapters import Chapter
 except ImportError:
     from .settings import API
+    from .chapters import Chapter
 import logging
 logging.basicConfig(filename='sdk.log', level=logging.INFO)
-from chapters import Chapter
 
 BOOK_API = API + 'book/'
 
