@@ -5,10 +5,12 @@ logging.basicConfig(filename='sdk.log', level=logging.INFO)
 try:
     from settings import API
     from access_token import TOKEN
+    from quotes import getAllLotrQuoates
 except ImportError:
     from .settings import API
     from .access_token import TOKEN
-from quotes import getAllLotrQuoates
+    from .quotes import getAllLotrQuoates
+
 
 MOVIE_API = API + 'movie/'
 HEADERS = {"Authorization": "Bearer " + TOKEN}
