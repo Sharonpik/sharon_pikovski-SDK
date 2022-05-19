@@ -14,7 +14,7 @@ Your project needs to use a Python version of 3.9.2 or later.
 
 ## Installation
 To install, use `pip`:
-> pip install my-name-sdk
+> pip install lotr-sdk
 
 ## Initialize Token
 Before you start anything, make sure to call initToken() with your token. This will initialize the SDK with you token.
