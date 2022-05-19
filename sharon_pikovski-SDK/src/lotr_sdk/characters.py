@@ -5,10 +5,12 @@ logging.basicConfig(filename='sdk.log', level=logging.INFO)
 try:
     from settings import API
     from access_token import TOKEN
+    from quotes import Quote
 except ImportError:
     from .settings import API
     from .access_token import TOKEN
-from quotes import Quote
+    from .quotes import Quote
+
 
 CHARACTER_API = API + 'character/'
 HEADERS = {"Authorization": "Bearer " + TOKEN}
